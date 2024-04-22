@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>Fit Plus + - Dashboard</title>
+
+    <!-- Custom fonts for this template-->
+    <link
+      href="vendor/fontawesome-free/css/all.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+      rel="stylesheet"
+    />
+
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin-2.min.css" rel="stylesheet" />
+  </head>
+
+  <body id="page-top">
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+      
+
+      <!-- Content Wrapper -->
+      <div id="content-wrapper" class="d-flex flex-column">
+        <!-- Main Content -->
+        <div id="content">
+          
+          <!-- Begin Page Content -->
+          <div class="container-fluid">
+            <!-- Page Heading -->
+            <div
+              class="d-sm-flex align-items-center justify-content-between mb-4"
+            >
+              <h1 class="h3 mb-0 text-gray-800">Create</h1>
+              
+              
+            </div>
+
+            <!-- Content Row -->
+            
+              
+            <!-- Content Row -->
+
+            <div class="row">
+              <!-- Area Chart -->                                                                                                                                
+                                                        
+              <div class="col-lg-12">
+                <div class="card shadow mb-4">
+                  <div class="card-header py-3">
+                    <h6 class="m-0 font-weight-bold text-primary">Users</h6>
+                  </div>
+
+
+
+                   <div class="card-body">
+                    <!-- <div class="table-responsive">
+                                                                                        
+                      <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                        <thead>
+                          <tr>
+                            
+                            <th>User</th>
+
+                            <th>Password</th>
+                                                        
+                            <th>Full Name</th>
+                            
+                            <th>Role</th>
+
+                            <th>Email</th>
+
+                            <th>Birth Date</th>
+
+                            <th>Genre</th>
+
+                            <th>Address</th>
+                             
+                            <th>Status</th>
+                                                                                                                
+                            
+                            
+                            
+                          </tr>
+                          
+                        </thead>
+                        <tbody id="userBody">
+                        
+                          <tr>
+                            
+                            <td>
+                              <input type="text" placeholder="User ..." class="form-control col-lg-6" id="input_user">
+                            </td>                            
+                            <td>
+                              <input type="text" placeholder="User123 ..." class="form-control col-lg-6" id="input_password">
+                            </td>
+                            
+                            <td>
+                              <input type="text" placeholder="Name ..." class="form-control col-lg-6" id="input_name">
+                            </td>
+                            <td>
+                              <input type="text" placeholder="Cliente ..." class="form-control col-lg-6" id="input_role">
+                            </td>
+                            
+                            
+                            <td>
+                              <input type="text" placeholder="user@email.com ..." class="form-control col-lg-6" id="input_email">
+                            </td>
+
+                            <td>
+                              <input type="text" placeholder="2024-04-19T00:00:00.000Z ..." class="form-control col-lg-6" id="input_date">
+                            </td>
+                            
+                            <td>
+                              <input type="text" placeholder="M ..." class="form-control col-lg-6" id="input_genre">
+                            </td>
+                            
+                            <td>
+                              <input type="text" placeholder="Merida Venezuela ..." class="form-control col-lg-6" id="input_address">
+                            </td>
+                            <td>
+                              <input type="text" placeholder="1 ..." class="form-control col-lg-6" id="input_status">
+                            </td>
+                          </tr>
+                          
+
+                        </tbody>
+                      </table>
+                    </div> -->
+                  
+
+                  <form>
+
+                    <div class="row d-flex">
+                  
+                      <div class="form-group col-sm-6">
+                       
+                        <label for="username">Username</label>  
+                        <input type="text" class="form-control mb-2" id="username">
+                        <abbr class="btn btn-secondary btn-sm" title="Example: User1234" style="text-decoration: none;">?</abbr>
+                        
+                      </div>
+                  
+                      <div class="form-group col-sm-6">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control mb-2" id="password">
+                        <abbr class="btn btn-secondary btn-sm" title="Example: User123@" style="text-decoration: none;">?</abbr>
+                      </div>
+                  
+                    </div>
+                  
+                    <div class="row d-flex">
+                  
+                      <div class="form-group col-sm-6">  
+                        <label for="fullName">Full Name</label>
+                        <input type="text" class="form-control mb-2" id="fullName">
+                        <abbr class="btn btn-secondary btn-sm" title="Example: Alejandro Ramirez" style="text-decoration: none;">?</abbr>
+                      </div>
+                  
+                      <div class="form-group col-sm-6">
+                        <label for="role">Role</label>
+                        <select class="form-control" id="role">
+                          
+                          <option value="">User</option>  
+                          <option value="">Client</option>
+                          <option value="">Administrator</option>
+
+                        </select> 
+                      </div>
+                  
+                    </div>
+                  
+                    <div class="row d-flex">
+                  
+                      <div class="form-group col-sm-6">
+                        <label for="email">Email</label>  
+                        <input type="email" class="form-control mb-2" id="email">
+                        <abbr class="btn btn-secondary btn-sm" title="Example: User@email.com" style="text-decoration: none;">?</abbr>
+                      </div>
+                  
+                      <div class="form-group col-sm-6">
+                        <label for="birthDate">Birth Date</label>
+                        <input type="date" class="form-control mb-2" id="birthDate">
+                        <abbr class="btn btn-secondary btn-sm" title="Example: 08-09-1999" style="text-decoration: none;">?</abbr>
+                      </div>
+                  
+                    </div>
+                  
+                    <div class="row d-flex">
+                  
+                      <div class="form-group col-sm-6">
+                        <label for="genre">Genre</label>
+                        <div class="form-check">
+                          <input type="radio" class="form-check-input" name="genre" id="male">
+                          <label class="form-check-label" for="male">Male</label>  
+                        </div>
+                        <div class="form-check">        
+                          <input type="radio" class="form-check-input" name="genre" id="female">
+                          <label class="form-check-label" for="female">Female</label>
+                        </div>
+                      </div>
+                  
+                      <div class="form-group col-sm-6">
+                        <label for="address">Address</label>
+                        
+                        <input type="text" class="form-control mb-2" id="address">
+                        <abbr class="btn btn-secondary btn-sm" title="Example: Merida Venezuela" style="text-decoration: none;">?</abbr>
+                        
+                      </div>
+                  
+                    </div>
+                  
+                    <div class="row">
+                  
+                      <div class="form-group col-sm-6 w-100">
+                        <label for="status">Status</label>
+                        <select class="form-control" id="status">
+                          <option id="active">Active</option>
+                          <option id="inactive">Inactive</option>  
+                        </select>
+                      </div>
+                  
+                    </div>
+                  
+                    <button type="submit" id="btn_1" class="btn btn-primary"data-toggle="modal" data-target="#exampleModal">Submit</button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            ...
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    
+                  
+                  </form>
+
+                  </div> 
+                </div>
+              </div>
+           
+   
+
+              <script>
+                const form = document.querySelector("form");
+                form.addEventListener("submit", (e) => {
+                  e.preventDefault(); // Evita que el formulario se envíe de forma predeterminada
+              
+                  // Obtiene los valores de los campos de entrada
+                  const username = document.getElementById("username").value;
+                  const password = document.getElementById("password").value;
+                  const fullName = document.getElementById("fullName").value;
+                  const role = document.getElementById("role").value;
+                  const email = document.getElementById("email").value;
+                  const birthDate = document.getElementById("birthDate").value;
+                  const genre = getSelectedGenre();
+                  const address = document.getElementById("address").value;
+                  const status = getSelectedStatus();
+              
+                  // Crea un objeto con los valores recopilados
+                  const data = {
+                    usuario: username,
+                    contrasena: password,
+                    nombreCompleto: fullName,
+                    rol: role,
+                    correoElectronico: email,
+                    fechaNacimiento: birthDate,
+                    genero: genre,
+                    direccion: address,
+                    estatus: status,
+                  };
+              
+                  // Realiza la solicitud al endpoint
+                  fetch("https://proyectois-production.up.railway.app/Usuarios", {
+                    method: "POST",
+                    headers: {
+                      "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify(data),
+                  })
+                    .then((response) => response.json())
+                    .then((responseJson) => {
+                      // Maneja la respuesta del servidor
+                      if (responseJson == "Error al agregar el usuario") {
+                        document.getElementsByClassName("modal-body")[0].textContent =
+                          "Error al agregar usuario";
+                        window.close();
+                      } else {
+                        document.getElementsByClassName("modal-body")[0].textContent =
+                          "Usuario agregado correctamente, cierra la ventana para continuar";
+                          document.getElementById("btn_1").hidden = true;
+
+                          document.getElementById("username").value = '';
+                  document.getElementById("password").value = '';
+                  document.getElementById("fullName").value = '';
+                  document.getElementById("role").value = '';
+                  document.getElementById("email").value = '';
+                  document.getElementById("birthDate").value = '';
+                  document.getElementById("address").value = '';
+                  getSelectedGenre() = null;
+                  
+                  getSelectedStatus() = null;
+
+                  
+                        
+                      }
+              
+                      console.log(responseJson);
+                      // Realiza acciones adicionales según sea necesario
+                    })
+                    .catch((error) => {
+                      // Manejo de errores de red u otros errores
+                      console.error("Error:", error);
+                    });
+                });
+              
+                function getSelectedGenre() {
+                  const maleRadioButton = document.getElementById("male");
+                  const femaleRadioButton = document.getElementById("female");
+              
+                  if (maleRadioButton.checked) {
+                    return "M";
+                  } else if (femaleRadioButton.checked) {
+                    return "F";
+                  } else {
+                    return null; // Ninguno seleccionado
+                  }
+                }
+              
+                function getSelectedStatus() {
+                  const activeOption = document.getElementById("active");
+                  const inactiveOption = document.getElementById("inactive");
+              
+                  if (activeOption.selected) {
+                    return "1";
+                  } else if (inactiveOption.selected) {
+                    return "0";
+                  } else {
+                    return null; // Ninguna opción seleccionada
+                  }
+                }
+              </script>
+              
+              <script>
+
+              function abrirVentanaEmergente() {
+                // Abre una nueva ventana emergente
+                window.open('tables.html', 'popup', 'width=400,height=300');
+              }
+            </script>
+
+
+
+          
+            
+
+            <!-- Content Row -->
+            <div class="row">
+              <!-- Content Column -->
+              <div class="col-lg-10 mb-4">
+                
+
+                
+          <!-- /.container-fluid -->
+        </div>
+        <!-- End of Main Content -->
+
+        <div class="row">
+          <!-- Pie Chart -->
+          
+
+        </div>
+
+        <!-- Footer -->
+        
+      </div>
+      <!-- End of Content Wrapper -->
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+      <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Logout Modal-->
+    <div
+      class="modal fade"
+      id="logoutModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+            <button
+              class="close"
+              type="button"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Select "Logout" below if you are ready to end your current session.
+          </div>
+          <div class="modal-footer">
+            <button
+              class="btn btn-secondary"
+              type="button"
+              data-dismiss="modal"
+            >
+              Cancel
+            </button>
+            <a class="btn btn-primary" href="login.html">Logout</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.min.js"></script>
+
+    <!-- Page level plugins -->
+    <script src="vendor/chart.js/Chart.min.js"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="js/demo/chart-area-demo.js"></script>
+    <script src="js/demo/chart-pie-demo.js"></script>
+  </body>
+</html>
